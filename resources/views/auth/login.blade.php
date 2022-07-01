@@ -56,6 +56,7 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
                                 </button>
+                                
 
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
@@ -63,6 +64,22 @@
                                     </a>
                                 @endif
                             </div>
+                        </div>
+
+                        <div class="social-auth-links text-center mb-3">
+                            <p>- OR -</p>
+                            <a href="/auth/facebook" class="btn btn-block btn-primary">
+                            <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
+                            </a>
+                            <a href="{{ url('auth/google') }}" class="btn btn-block btn-success">
+                            <i class="fab fa-google-plus mr-2"></i> Sign in using Google
+                            </a>
+                            <a href="#" class="btn btn-block btn-danger">
+                            <i class="fab fa-google-plus mr-2"></i> Sign in using Instagram
+                            </a>
+                            <a href="#" class="btn btn-block btn-info">
+                            <i class="fab fa-google-plus mr-2"></i> Sign in using Apple
+                            </a>
                         </div>
                     </form>
                 </div>

@@ -30,4 +30,25 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'google' => [
+        'client_id' => '450995278514-pjdum6b2r2b7ql1cau9qdfrvn6mh6s3f.apps.googleusercontent.com',
+        'client_secret' => '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',
+        'redirect' => 'http://localhost:8000/auth/google/callback',
+      ], 
+
+      'facebook' => [
+        'client_id' => env('382923450488162'),
+        'client_secret' => env('5d187736a262c44232570798a133ec67'),
+        'redirect' => env('http://localhost:8000/auth/facebook/callback'),
+     ],
+
+      'instagram' => [
+        'client_id' => env('1907707236096167'),
+        'client_secret' => env('e50852a3038360ecdf6e4a52d2502bd6'),
+        'redirect' => env('http://localhost:8000/auth/instagram/callback'),
+     ],
+     
+
+      
+
 ];
