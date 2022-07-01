@@ -45,7 +45,7 @@ return [
       'instagram' => [
         'client_id' => env('1907707236096167'),
         'client_secret' => env('e50852a3038360ecdf6e4a52d2502bd6'),
-        'redirect' => env('http://localhost:8000/auth/instagram/callback'),
+        'redirect' => env('https://127.0.0.1:8000/login/instagram/callback'),
      ],
      
 
